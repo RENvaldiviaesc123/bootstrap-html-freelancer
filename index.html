@@ -13,19 +13,19 @@
 
 <body>
     <div> <!--Inizio contenitore grande-->
-        <div class="row"> <!--INIZIO NAVBAR-->
+        <div class=""> <!--INIZIO NAVBAR-->
             <nav class="navbar navbar-expand-lg bg-dark">
-                <div class="container-fluid ">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                <div class="container">
+                    <button class="navbar-toggler justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-around" id="navbarText">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 column">
+                    <div class="row collapse navbar-collapse " id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 column justify-content-between">
                             <li class="nav-item">
-                                <a class="nav-link active text-primary" aria-current="page" href="#">Portfolio</a>
+                                <a class="nav-link active text-primary col-6" aria-current="page" href="#">Portfolio</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item col-6 ">
                                 <a class="nav-link text-primary text-decoration-underline" href="#">Contact me</a>
                             </li>
                         </ul>
@@ -36,45 +36,46 @@
 
         <div class="bg-primary text-center"> <!--INIZIO PROFILE-->
             <div class="">
-                <img src="./img/undraw_profile_pic_ic5t.svg" alt="Foto profilo">
+                <img src="./img/undraw_profile_pic_ic5t.svg" class="profile p-3" alt="Foto profilo">
             </div>
             <h3>Pinco Pallo</h3>
             <p>WEB DESIGNER</p>
         </div> <!--FINE PARTE PROFILE-->
 
-        <div class="container"> <!--INIZIO PORTFOLIO (CARDS)-->
-            <div class="row">
-                <div class="col-4 text-center border"> <!--INIZIO CARD 1-->
-                    <img src="./img/cabin.png" class="card-img-top" alt="Cabin Website">
+        <div class="container-fluid padding-bot"> <!--INIZIO PORTFOLIO (CARDS)-->
+            <div class="row column-gap-1 row-gap-3 justify-content-center">
+
+                <div class="col-3 text-center border padding-bot zero-padding"> <!--INIZIO CARD 1-->
+                    <img src="./img/cabin.png" class="card-img-top " alt="Cabin Website">
                     <p>Cabin Website</p>
                     <div class="d-inline p-2 text-bg-primary rounded">Preview</div>
                     <div class="d-inline p-2 text-primary  border rounded border-primary bg-white">Visit Site</div>
                 </div><!--FINE CARD 1-->
-                <div class="col-4 text-center border "> <!--INIZIO CARD 2-->
+                <div class="col-3 text-center border padding-bot zero-padding"> <!--INIZIO CARD 2-->
                     <img src="./img/cake.png" class="card-img-top" alt="Cake Website">
                     <p>Cake Website</p>
                     <div class="d-inline p-2 text-bg-primary rounded">Preview</div>
                     <div class="d-inline p-2 text-primary  border rounded border-primary bg-white">Visit Site</div>
                 </div><!--FINE CARD 2-->
-                <div class="col-4 text-center border"> <!--INIZIO CARD 3-->
+                <div class="col-3 text-center border padding-bot zero-padding"> <!--INIZIO CARD 3-->
                     <img src="./img/circus.png" class="card-img-top" alt="Circus Website">
                     <p>Circus Website</p>
                     <div class="d-inline p-2 text-bg-primary rounded">Preview</div>
                     <div class="d-inline p-2 text-primary  border rounded border-primary bg-white">Visit Site</div>
                 </div><!--FINE CARD 3-->
-                <div class="col-4 text-center border"> <!--INIZIO CARD 4-->
+                <div class="col-3 text-center border padding-bot zero-padding"> <!--INIZIO CARD 4-->
                     <img src="./img/game.png" class="card-img-top" alt="Game Website">
                     <p>Game Website </p>
                     <div class="d-inline p-2 text-bg-primary rounded">Preview</div>
                     <div class="d-inline p-2 text-primary  border rounded border-primary bg-white">Visit Site</div>
                 </div><!--FINE CARD 4-->
-                <div class="col-4 text-center border"> <!--INIZIO CARD 5-->
+                <div class="col-3 text-center border padding-bot zero-padding"> <!--INIZIO CARD 5-->
                     <img src="./img/safe.png" class="card-img-top" alt="Safe Website">
                     <p>Safe Website</p>
                     <div class="d-inline p-2 text-bg-primary rounded">Preview</div>
                     <div class="d-inline p-2 text-primary  border rounded border-primary bg-white">Visit Site</div>
                 </div><!--FINE CARD 5-->
-                <div class="col-4 text-center border"> <!--INIZIO CARD 6-->
+                <div class="col-3 text-center border padding-bot zero-padding"> <!--INIZIO CARD 6-->
                     <img src="./img/submarine.png" class="card-img-top" alt="Submarine Website">
                     <p>Submarine Website</p>
                     <div class="d-inline p-2 text-bg-primary rounded">Preview</div>
@@ -84,9 +85,9 @@
         </div> <!--FINE PORTFOLIO (CARDS)-->
 
         <div class="container-fluid"> <!--INIZIO FORM-->
-            <div class="bg-primary">
+            <div class="bg-primary padding-bot">
                 <h3 class="text-center">WANT AN OFFER?</h3>
-                <DIV class="row"><!--FORM-->
+                <DIV class="row padding-LR"><!--FORM-->
 
                     <div class="mb-3 col-6"> <!--First name-->
                         <label for="exampleFormControlInput1" class="form-label">First Name</label>
@@ -108,19 +109,18 @@
                         <input type="text" class="form-control" id="exampleFormControlInput1"
                             placeholder="Hours requested...">
                     </div>
-                    <div class="btn-group mb-1 col-6">
-                        <p>Type of work</p>
-                        <button class="btn bg-white text-dark btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Select the type of work
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Lavoro 1</a></li>
-                            <li><a class="dropdown-item" href="#">Lavoro 2</a></li>
-                            <li><a class="dropdown-item" href="#">Lavoro 3</a></li>
-                        </ul>
+                    <div class="row text-start">
+                        <div class="col-6 mt-4">
+                            <p>Type of work</p>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select the type of work</option>
+                                <option value="Lavoro 1">Lavoro 1</option>
+                                <option value="Lavoro 2">Lavoro 2</option>
+                                <option value="Lavoro 3">Lavoro 3</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="mb-3 col-6"><!--Discount Code-->
+                    <div class="col-6 mb-3"><!--Discount Code-->
                         <label for="exampleFormControlInput1" class="form-label">Discount Code</label>
                         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
                     </div>
@@ -129,6 +129,9 @@
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                             placeholder="Specify your work commission..."></textarea>
                     </div>
+                    <div class="col-5"></div>
+                    <div class="d-inline p-2 text-bg-warning text-center zero-padding rounded col-2">Send</div>
+                    <div class="col-5"></div>
 
 
                 </DIV>
